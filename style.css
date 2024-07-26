@@ -10,16 +10,22 @@ header {
     padding: 10px 20px;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    gap: 15px;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 10px;
 }
 
 .lang {
@@ -27,31 +33,40 @@ nav ul li {
     justify-content: flex-end;
 }
 
+.logo {
+    width: 100px; /* Размер логотипа */
+}
+
 .hero {
     position: relative;
     text-align: center;
     color: white;
+    height: 80vh;
+    overflow: hidden;
 }
 
 .hero-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     opacity: 0.8;
 }
 
 .hero-content {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .hero p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .hero button {
@@ -60,7 +75,7 @@ nav ul li {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .features {
@@ -74,7 +89,7 @@ nav ul li {
 }
 
 .feature img {
-    width: 50px;
+    width: 100px;
     height: auto;
 }
 
@@ -86,14 +101,31 @@ nav ul li {
 
 .review {
     background-color: #0b1124;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     width: 30%;
+    text-align: center;
+}
+
+.order-section {
+    background-image: url('./img/Group\ 2\ 1.png'); /* Добавьте ваш фон */
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
 }
 
 .order {
     text-align: center;
+    background-color: rgba(0, 16, 53, 0.8); /* Прозрачный темный фон */
     padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.order h2 {
+    margin-bottom: 10px;
 }
 
 .order form {
@@ -103,10 +135,18 @@ nav ul li {
 }
 
 .order input {
-    margin: 10px 0;
+    margin: 5px 0;
     padding: 10px;
-    width: 80%;
-    max-width: 300px;
+    width: 90%;
+    border: 1px solid #6c3eff;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #000;
+    background-color: #fff;
+}
+
+.order input::placeholder {
+    color: #6c3eff;
 }
 
 .order button {
@@ -115,7 +155,10 @@ nav ul li {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    font-size: 1.2em;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 90%;
 }
 
 footer {
@@ -124,6 +167,18 @@ footer {
     text-align: center;
 }
 
-footer .contact, footer .emails {
-    margin: 10px 0;
+footer .footer-text p,
+footer .footer-emails p,
+footer .footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-emails {
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    border-top: 1px solid #6c3eff;
+    padding-top: 10px;
 }
