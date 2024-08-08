@@ -4,6 +4,13 @@
   padding: auto;
 }
 
+.full-screen-image {
+  position: relative;
+  width: auto; 
+  height: 100vw; 
+  overflow: hidden; 
+}
+
 .full-screen-image img {
   position: absolute;
   top: 50%;
